@@ -1,6 +1,7 @@
 ﻿$(function () {
     var sWidth = $("#focus").width();
     var len = $("#focus ul li").length;
+    console.log("len=" + len);
     var index = 0;
     var picTimer;
     var btn = "<div class='btnBg'></div><div class='btn'>";
@@ -30,6 +31,8 @@
         showPics(index);
     });
     $("#focus ul").css("width", sWidth * (len));
+    $("#focus ul li").css("width", sWidth);
+    $("#focus ul a").children("div").css("width", sWidth);
     $("#focus").hover(function () {
         clearInterval(picTimer);
     }, function () {
@@ -45,3 +48,9 @@
         $("#focus .btn span").stop(true, false).animate({ "opacity": "0.4" }, 300).eq(index).stop(true, false).animate({ "opacity": "1" }, 300);
     }
 });
+ $(window).on("resize",function(){
+    sWidth = $("#focus").width();
+    $("#focus ul").css("width", sWidth * (len));
+    $("#focus ul li").css("width", sWidth);
+    $("#focus ul a").children("div").css("width", sWidth);
+ })

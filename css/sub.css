@@ -190,7 +190,7 @@ h2.tit1 {
 }
 
 .about {
-  padding-bottom: 30px;
+    padding: 0 30px 30px;
   overflow: hidden;
 }
 .aboutimg {
@@ -200,7 +200,7 @@ h2.tit1 {
   overflow: hidden;
 }
 .aboutimg img {
-    width: 100%;
+  width: 100%;
 }
 .aboutck dl {
   width: 100%;
@@ -236,17 +236,27 @@ h2.tit1 {
   padding-bottom: 15px;
 }
 
+.news {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 0 30px;
+}
+
 .news_l {
-  width: 230px;
+  width: 33.3333%;
   float: left;
   padding-left: 5px;
   padding-right: 50px;
   overflow: hidden;
+  box-sizing: border-box;
 }
 .news_r {
   float: right;
-  width: 700px;
+  width: 66.6666%;
   overflow: hidden;
+  box-sizing: border-box;
 }
 .news_l h3 {
   font-size: 15px;
@@ -282,6 +292,7 @@ h2.tit1 {
   text-transform: uppercase;
   color: #3b2523;
   position: relative;
+  z-index: -1;
 }
 .news_r h3 em {
   position: absolute;
@@ -300,31 +311,42 @@ h2.tit1 {
 .article p {
   padding: 15px 0px;
   overflow: hidden;
+  line-height: 1.3;
 }
+/* .article img {
+    max-width: 100%;
+    height: auto;
+} */
 .newsbtm {
   padding: 30px 0px;
   overflow: hidden;
   margin-bottom: 120px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  box-sizing: border-box;
 }
 .newsbtm .newsprev {
   float: left;
-  width: 300px;
+  width: 45%;
   padding: 5px 20px;
   overflow: hidden;
   color: #fff;
   font-size: 13px;
   line-height: 20px;
   background: #2d1b15;
+  box-sizing: border-box;
 }
 .newsbtm .newsnext {
   float: right;
-  width: 300px;
+  width: 45%;
   padding: 5px 20px;
   overflow: hidden;
   color: #fff;
   font-size: 13px;
   line-height: 20px;
   background: #2d1b15;
+  box-sizing: border-box;
 }
 .newsbtm a {
   color: #fff;
@@ -337,30 +359,40 @@ h2.tit1 {
   margin-bottom: 60px;
   overflow: hidden;
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 .contact dl dt {
   float: left;
-  width: 485px;
-  height: 297px;
+  width: 50%;
+  height: 60%;
   overflow: hidden;
   border: 1px solid #9d9291;
   text-align: center;
-  margin-right: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
 }
-.contact dl dd.shoptit {
-  float: left;
+.contact dl .shoptit {
   font-size: 20px;
   width: 100px;
   color: #3b2523;
   font-weight: 600;
   line-height: 25px;
 }
+.contact dl .detail {
+    width: calc(100% - 100px);
+}
 .contact dl dd.shopinfo {
   float: right;
-  width: 360px;
-  padding-right: 10px;
+  width: 50%;
+  box-sizing: border-box;
+  padding-left: 20px;
   line-height: 25px;
   font-size: 15px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 .contact dl dd.shopinfo p {
   padding-bottom: 30px;
@@ -404,13 +436,16 @@ h2.tit1 {
   text-transform: uppercase;
 }
 .resetbtn {
-  width: 490px;
-  height: 35px;
-  line-height: 35px;
+  width: 48%;
+  /* height: 35px; */
+  /* line-height: 35px; */
+  padding: 5px 10px;
   background: #f8f8f8;
   text-align: center;
   color: #3b2523;
   font-size: 15px;
+  box-sizing: border-box;
+  line-height: 1.5;
 }
 a:hover.resetbtn,
 a.cur.resetbtn {
@@ -423,16 +458,26 @@ a.cur.resetbtn {
 .fr {
   float: right;
 }
-
+.brand {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 .brand_l {
   float: left;
-  width: 230px;
+  width: 33.3333%;
   overflow: hidden;
 }
 .brand_r {
-  width: 727px;
+  width: 66.6666%;
   overflow: hidden;
   float: right;
+}
+.brand_rc {
+    width: 100%;
+}
+.brand_rc ul {
+    width: 100%;
 }
 .brand_l h3 {
   font-size: 15px;
@@ -510,20 +555,26 @@ a.cur.resetbtn {
   color: #726766;
 }
 
+.brand_rc ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
 .brand_rc ul li {
   float: left;
-  width: 235px;
-  height: 206px;
+  padding: 5px;
+  width: 33.3333%;
   overflow: hidden;
   text-align: center;
   display: inline;
-  margin-right: 5px;
-  margin-top: 5px;
+  box-sizing: border-box;
 }
 .brand_rc ul li a {
   display: block;
-  width: 232px;
-  height: 206px;
+  width: 100%;
   float: left;
   overflow: hidden;
 }
@@ -534,6 +585,8 @@ a.cur.resetbtn {
 }
 .brand_rc ul li a img {
   vertical-align: middle;
+  width: 100%;
+  height: auto;
 }
 .brand_rc ul li a:hover {
   background: #f6f6f6;
@@ -544,7 +597,8 @@ a.cur.resetbtn {
 }
 
 .brand_page {
-  width: 930px;
+    width: 100%;
+  max-width: 930px;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -585,11 +639,16 @@ a.cur.resetbtn {
 }
 
 .sharebox {
-  width: 700px;
+  width: 100%;
+  height: 40px;
+  position: relative;
 }
 .share {
   display: inline-block;
-  float: right;
+  position: absolute;
+  top: 0;
+  right: 0;
+  /* float: right; */
 }
 .share a {
   filter: alpha(opacity=70);
@@ -605,12 +664,82 @@ a.cur.resetbtn {
   padding: 0 3px;
 }
 
+/* search page */
+.search {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.search>div {
+    width: 50%;
+    padding: 0 10px;
+    box-sizing: border-box;
+    position: relative;
+    padding-bottom: 100px;
+    margin-bottom: 30px;
+}
+
+.search h5 {
+    font-size: 17px;
+    margin-bottom: 15px;
+    color: #2E1B15;
+}
+
+.search-brand .brand_rc ul li {
+    width: 50%;
+}
+
+.search-news .inewsc dl {
+    width: 50%;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.search-news .inewsc dl dt {
+    width: 100%;
+}
+
+.search-news .inewsc dl dt a {
+    display: block;
+    width: 100%;
+}
+
+.search-news .inewsc dl dt a img {
+    width: 100%;
+}
+
+.search-news .inewsc dd {
+    padding: 15px 10px;
+}
+
+.search-news .inewsc dd h3 a {
+    font-size: 15px;
+    color: #3b2523;
+}
+
+.search .page {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    width: auto;
+}
+
 @media screen and (max-width: 1026px) {
   h2.tit1 {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
   }
+}
+
+@media screen and (max-width: 930px) {
+    /* .brand_page {
+        width: 90%;
+    } */
 }
 
 @media screen and (max-width: 768px) {
@@ -658,34 +787,34 @@ a.cur.resetbtn {
       opacity: 1;
     }
     10% {
-        opacity: 0;
+      opacity: 0;
     }
     20% {
-        opacity: 0;
+      opacity: 0;
     }
     30% {
-        opacity: 0;
+      opacity: 0;
     }
     40% {
-        opacity: 0;
+      opacity: 0;
     }
     50% {
-        opacity: 0;
+      opacity: 0;
     }
     60% {
-        opacity: 0;
+      opacity: 0;
     }
     70% {
-        opacity: 0;
+      opacity: 0;
     }
     80% {
-        opacity: 0;
+      opacity: 0;
     }
     90% {
-        opacity: 0;
+      opacity: 0;
     }
     100% {
-        opacity: 1;
+      opacity: 1;
     }
   }
   @keyframes ibrand_img_2 {
@@ -693,34 +822,34 @@ a.cur.resetbtn {
       opacity: 0;
     }
     10% {
-        opacity: 1;
+      opacity: 1;
     }
     20% {
-        opacity: 0;
+      opacity: 0;
     }
     30% {
-        opacity: 0;
+      opacity: 0;
     }
     40% {
-        opacity: 0;
+      opacity: 0;
     }
     50% {
-        opacity: 0;
+      opacity: 0;
     }
     60% {
-        opacity: 0;
+      opacity: 0;
     }
     70% {
-        opacity: 0;
+      opacity: 0;
     }
     80% {
-        opacity: 0;
+      opacity: 0;
     }
     90% {
-        opacity: 0;
+      opacity: 0;
     }
     100% {
-        opacity: 0;
+      opacity: 0;
     }
   }
   @keyframes ibrand_img_3 {
@@ -728,34 +857,34 @@ a.cur.resetbtn {
       opacity: 0;
     }
     10% {
-        opacity: 0;
+      opacity: 0;
     }
     20% {
-        opacity: 1;
+      opacity: 1;
     }
     30% {
-        opacity: 0;
+      opacity: 0;
     }
     40% {
-        opacity: 0;
+      opacity: 0;
     }
     50% {
-        opacity: 0;
+      opacity: 0;
     }
     60% {
-        opacity: 0;
+      opacity: 0;
     }
     70% {
-        opacity: 0;
+      opacity: 0;
     }
     80% {
-        opacity: 0;
+      opacity: 0;
     }
     90% {
-        opacity: 0;
+      opacity: 0;
     }
     100% {
-        opacity: 0;
+      opacity: 0;
     }
   }
   @keyframes ibrand_img_4 {
@@ -763,34 +892,34 @@ a.cur.resetbtn {
       opacity: 0;
     }
     10% {
-        opacity: 0;
+      opacity: 0;
     }
     20% {
-        opacity: 0;
+      opacity: 0;
     }
     30% {
-        opacity: 1;
+      opacity: 1;
     }
     40% {
-        opacity: 0;
+      opacity: 0;
     }
     50% {
-        opacity: 0;
+      opacity: 0;
     }
     60% {
-        opacity: 0;
+      opacity: 0;
     }
     70% {
-        opacity: 0;
+      opacity: 0;
     }
     80% {
-        opacity: 0;
+      opacity: 0;
     }
     90% {
-        opacity: 0;
+      opacity: 0;
     }
     100% {
-        opacity: 0;
+      opacity: 0;
     }
   }
   @keyframes ibrand_img_5 {
@@ -798,34 +927,34 @@ a.cur.resetbtn {
       opacity: 0;
     }
     10% {
-        opacity: 0;
+      opacity: 0;
     }
     20% {
-        opacity: 0;
+      opacity: 0;
     }
     30% {
-        opacity: 0;
+      opacity: 0;
     }
     40% {
-        opacity: 1;
+      opacity: 1;
     }
     50% {
-        opacity: 0;
+      opacity: 0;
     }
     60% {
-        opacity: 0;
+      opacity: 0;
     }
     70% {
-        opacity: 0;
+      opacity: 0;
     }
     80% {
-        opacity: 0;
+      opacity: 0;
     }
     90% {
-        opacity: 0;
+      opacity: 0;
     }
     100% {
-        opacity: 0;
+      opacity: 0;
     }
   }
   @keyframes ibrand_img_6 {
@@ -833,34 +962,34 @@ a.cur.resetbtn {
       opacity: 0;
     }
     10% {
-        opacity: 0;
+      opacity: 0;
     }
     20% {
-        opacity: 0;
+      opacity: 0;
     }
     30% {
-        opacity: 0;
+      opacity: 0;
     }
     40% {
-        opacity: 0;
+      opacity: 0;
     }
     50% {
-        opacity: 1;
+      opacity: 1;
     }
     60% {
-        opacity: 0;
+      opacity: 0;
     }
     70% {
-        opacity: 0;
+      opacity: 0;
     }
     80% {
-        opacity: 0;
+      opacity: 0;
     }
     90% {
-        opacity: 0;
+      opacity: 0;
     }
     100% {
-        opacity: 0;
+      opacity: 0;
     }
   }
   @keyframes ibrand_img_7 {
@@ -868,34 +997,34 @@ a.cur.resetbtn {
       opacity: 0;
     }
     10% {
-        opacity: 0;
+      opacity: 0;
     }
     20% {
-        opacity: 0;
+      opacity: 0;
     }
     30% {
-        opacity: 0;
+      opacity: 0;
     }
     40% {
-        opacity: 0;
+      opacity: 0;
     }
     50% {
-        opacity: 0;
+      opacity: 0;
     }
     60% {
-        opacity: 1;
+      opacity: 1;
     }
     70% {
-        opacity: 0;
+      opacity: 0;
     }
     80% {
-        opacity: 0;
+      opacity: 0;
     }
     90% {
-        opacity: 0;
+      opacity: 0;
     }
     100% {
-        opacity: 0;
+      opacity: 0;
     }
   }
   @keyframes ibrand_img_8 {
@@ -903,34 +1032,34 @@ a.cur.resetbtn {
       opacity: 0;
     }
     10% {
-        opacity: 0;
+      opacity: 0;
     }
     20% {
-        opacity: 0;
+      opacity: 0;
     }
     30% {
-        opacity: 0;
+      opacity: 0;
     }
     40% {
-        opacity: 0;
+      opacity: 0;
     }
     50% {
-        opacity: 0;
+      opacity: 0;
     }
     60% {
-        opacity: 0;
+      opacity: 0;
     }
     70% {
-        opacity: 1;
+      opacity: 1;
     }
     80% {
-        opacity: 0;
+      opacity: 0;
     }
     90% {
-        opacity: 0;
+      opacity: 0;
     }
     100% {
-        opacity: 0;
+      opacity: 0;
     }
   }
   @keyframes ibrand_img_9 {
@@ -938,34 +1067,34 @@ a.cur.resetbtn {
       opacity: 0;
     }
     10% {
-        opacity: 0;
+      opacity: 0;
     }
     20% {
-        opacity: 0;
+      opacity: 0;
     }
     30% {
-        opacity: 0;
+      opacity: 0;
     }
     40% {
-        opacity: 0;
+      opacity: 0;
     }
     50% {
-        opacity: 0;
+      opacity: 0;
     }
     60% {
-        opacity: 0;
+      opacity: 0;
     }
     70% {
-        opacity: 0;
+      opacity: 0;
     }
     80% {
-        opacity: 1;
+      opacity: 1;
     }
     90% {
-        opacity: 0;
+      opacity: 0;
     }
     100% {
-        opacity: 0;
+      opacity: 0;
     }
   }
   @keyframes ibrand_img_10 {
@@ -973,56 +1102,74 @@ a.cur.resetbtn {
       opacity: 0;
     }
     10% {
-        opacity: 0;
+      opacity: 0;
     }
     20% {
-        opacity: 0;
+      opacity: 0;
     }
     30% {
-        opacity: 0;
+      opacity: 0;
     }
     40% {
-        opacity: 0;
+      opacity: 0;
     }
     50% {
-        opacity: 0;
+      opacity: 0;
     }
     60% {
-        opacity: 0;
+      opacity: 0;
     }
     70% {
-        opacity: 0;
+      opacity: 0;
     }
     80% {
-        opacity: 0;
+      opacity: 0;
     }
     90% {
-        opacity: 1;
+      opacity: 1;
     }
     100% {
-        opacity: 0;
+      opacity: 0;
     }
   }
   .aboutimg {
-      position: relative;
-      height: 0;
-      padding-bottom: 60%;
+    position: relative;
+    height: 0;
+    padding-bottom: 60%;
   }
   .aboutimg img {
-      height: 100%;
-      width: auto;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%,-50%);
-    }
-    .aboutck dl dt {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-    .aboutck dl dd {
-        width: 100%;
-    }
+    height: 100%;
+    width: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .aboutck dl dt {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .aboutck dl dd {
+    width: 100%;
+  }
+  .news_l {
+    display: none;
+  }
+  .news_r {
+    width: 100%;
+  }
+  .brand_l {
+      display: none;
+  }
+  .brand_r {
+      width: 100%;
+  }
+  .contact dl .shoptit  {
+      width: 100%;
+  }
+  .contact dl .detail {
+      width: 100%;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -1034,9 +1181,43 @@ a.cur.resetbtn {
   }
 }
 
-@media screen and (max-width: 414px) {
-    .ibrandlistc ul li {
+@media screen and (max-width: 576px) {
+    .brand_rc ul li {
         width: 50%;
-        padding-bottom: 37.5%;
     }
+    .search>div {
+        width: 100%;
+    }
+    .contact dl dt {
+        width: 100%;
+    }
+    .contact dl dd.shopinfo {
+        width: 100%;
+        padding-left: 0;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 414px) {
+  .ibrandlistc ul li {
+    width: 50%;
+    padding-bottom: 37.5%;
+  }
+  .news_r h3 {
+    padding-right: 0;
+  }
+  .news_r h3 em {
+    position: static;
+    display: block;
+  }
+  .newsbtm .newsprev {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .newsbtm .newsnext {
+    width: 100%;
+  }
+  .resetbtn {
+      font-size: 12px;
+  }
 }

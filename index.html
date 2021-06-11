@@ -61,6 +61,7 @@ function formReset()
 </script></head>
 
 <body>
+    <!-- edit -->
      <div class="header">
       <div class="headerC">
           <!-- add -->
@@ -112,24 +113,22 @@ function formReset()
             <h2 class="tit1">news</h2>
             <div class="clear"></div>
             <div class="inewsc">
-            
-             
 				  <dl>
-					  <dt><a href="news.php?news_id=304"><img src='https://www.hengyuan-optical.com/thumb/media_printed-210528203613.jpg'></a></dt>
+					  <dt><a href="news.php?news_id=304"><img src='./new-pic/media_printed-160609155813.jpg'></a></dt>
 					  <dd>
 						  <h3><a href="news.php?news_id=304">新品特報 蔡司鑽金藍光防護鏡片</a></h3>
 						  <p></p>
 					  </dd>
 				  </dl>
 				  <dl>
-					  <dt><a href="news.php?news_id=303"><img src='https://www.hengyuan-optical.com/thumb/media_printed-210524154638.jpg'></a></dt>
+					  <dt><a href="news.php?news_id=303"><img src='./new-pic/media_printed-160615180021.jpg'></a></dt>
 					  <dd>
 						  <h3><a href="news.php?news_id=303">雷朋RAYBAN抗濾藍光眼鏡</a></h3>
 						  <p></p>
 					  </dd>
 				  </dl>
 				  <dl>
-					  <dt><a href="news.php?news_id=302"><img src='https://www.hengyuan-optical.com/thumb/media_printed-210522134544.jpg'></a></dt>
+					  <dt><a href="news.php?news_id=302"><img src='./new-pic/media_printed-170330153601.jpg'></a></dt>
 					  <dd>
 						  <h3><a href="news.php?news_id=302">台灣加油 防疫加油~~!</a></h3>
 						  <p></p>
@@ -137,7 +136,7 @@ function formReset()
 				  </dl> 
                   <!-- add -->
                   <dl>
-                    <dt><a href="news.php?news_id=302"><img src='https://www.hengyuan-optical.com/thumb/media_printed-210522134544.jpg'></a></dt>
+                    <dt><a href="news.php?news_id=302"><img src='./new-pic/media_printed-170928191946.jpg'></a></dt>
                     <dd>
                         <h3><a href="news.php?news_id=302">台灣加油 防疫加油~~!</a></h3>
                         <p></p>
@@ -246,7 +245,7 @@ function formReset()
 		<p>東門店　Tel (02)2358-1939　台北市金山南路二段11號 <br class="br-mobile"><span>/</span> 板橋店　Tel (02)2953-9719　新北市板橋區華興街89號 <br class="br-mobile"><span>/</span> 三重店　Tel (02)2977-0109　新北市三重區集美街91號<br/>
 			Copyright 2014 © Xin Man liter Ltd.    Design by MI-GO</p>
 	</div>
-    
+
 </div>
 </div>
 	<div class="rfloat">
@@ -291,10 +290,8 @@ function formReset()
     <script>
         $(".menu").bind("click",function(){
             if($(".nav").hasClass("active")){
-            console.log("???");
             $(".nav").removeClass("active");
             }else {
-            console.log("@@@");
             $(".nav").addClass("active");
             }
         });
@@ -305,10 +302,9 @@ function formReset()
         })
         $(window).on("resize",function(){
             if($(window).width()>768) {
-            $(".mobile-search-form").hide();
-        }
-        })
-        
+                $(".mobile-search-form").hide();
+            }
+        })   
     </script>
 </body>
 </html>

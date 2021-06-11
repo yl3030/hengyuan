@@ -45,7 +45,8 @@ body{ position:relative; height:100%}
 	text-align: left;
 	display: inline-block;
 	position: relative;
-	width: 930px;
+	width: 100%;
+	max-width: 930px;
 	height:1270px;
 	overflow: auto;
 	background: #fff;
@@ -154,6 +155,11 @@ body{ position:relative; height:100%}
 	color: #fff;
 	background: #333;
 }
+}
+@media screen and (max-width: 930px) {
+	.featherlight .featherlight-content {
+		width: 90%;
+	}
 }
  @media(max-width: 768px) {
  .fl-page h1 span {
