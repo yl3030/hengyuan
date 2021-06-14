@@ -187,6 +187,9 @@ textarea {
   color: #3b2523;
   display: none;
 }
+.navc ul li[title="訂購說明"] a em {
+	font-size: 12px;
+}
 .navc ul li a:hover span,
 .navc ul li.cur a span {
   display: none;

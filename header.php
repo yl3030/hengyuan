@@ -102,7 +102,7 @@ function formReset()
             	<li><a href="about.php" title="關於恆源眼鏡"><span>關於我們</span><em>About us</em></a></li>
                 <li><a href="news.php" title="最新消息"><span>最新消息</span><em>Latest News</em></a></li>
                 <li><a href="brand.php" title="眼鏡品牌"><span>眼鏡品牌</span><em>Eyewear brand</em></a></li>
-                <li style="width:160px" title="訂購說明"><a href="order.php"><span>訂購說明</span><em>Order instructions</em></a></li>
+                <li title="訂購說明"><a href="order.php"><span>訂購說明</span><em>Order instructions</em></a></li>
                 <li><a href="contact.php" title="聯繫我們"><span>聯繫我們</span><em>contact Us</em></a></li>
                 <li><a href="https://www.facebook.com/pages/%E6%81%86%E6%BA%90%E7%9C%BC%E9%8F%A1/136809096352239?fref=ts" target="_blank"><span>Facebook</span><em>Facebook</em></a></li>
                 <li><a href="http://blog.xuite.net/lilylu1978/twblog" target=_blank><span>部落格</span><em>blog</em></a></li>

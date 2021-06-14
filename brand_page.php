@@ -3,6 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Eyewear brand</title>
  <link rel="stylesheet" href="css/style.css" type="text/css" /> 
  <link type="text/css" href="css/jquery.jscrollpane.css" rel="stylesheet" />
@@ -15,9 +16,6 @@
    <script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
    <script type="text/javascript" src="js/jquery.mu.image.resize.js"></script>
    <script>
-			$(function(){			
-				$('.size-A').muImageResize({width: 930, height:500});
-			});
    </script>
    <script type="text/javascript">
 $(document).ready(function(){
